@@ -5,10 +5,40 @@ output: html_document
 github_repo: https://carolineahler.github.io/trial_webpage/
 ---
 
-hej med dig 
+hej med dig bob 
 ``` {css, echo=FALSE}
 body {
-background-color: black;
+background-color: navy;
 color: white;
 }
+
+
 ```
+
+<br>
+
+<button id="button1">Click me!</button>
+<p id="message"></p>
+
+<script>
+document.getElementById("button1").addEventListener("click", function() {
+  document.getElementById("message").innerHTML = "Button 1 was clicked!";
+});
+</script>
+
+<br> 
+
+<select id="dropdown">
+  <option value="option1">Dit første valg</option>
+  <option value="option2">Option 2</option>
+  <option value="option3">Option 3</option>
+</select>
+
+<p id="message"></p>
+
+<script>
+document.getElementById("dropdown").addEventListener("change", function() {
+  var selectedOption = document.getElementById("dropdown").value;
+  document.getElementById("message").innerHTML = "Selected option: " + selectedOption;
+});
+</script>

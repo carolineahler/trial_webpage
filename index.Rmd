@@ -6,3 +6,9 @@ github_repo: https://carolineahler.github.io/trial_webpage/
 ---
 
 hej med dig 
+``` {css, echo=FALSE}
+body {
+background-color: black;
+color: white;
+}
+```

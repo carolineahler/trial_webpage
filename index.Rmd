@@ -43,3 +43,43 @@ document.getElementById("dropdown").addEventListener("change", function() {
   document.getElementById("message").innerHTML = "Selected option: " + selectedOption;
 });
 </script>
+
+
+## Write a Python code to calculate the sum of 5 and 7.
+
+<textarea id="user-code"></textarea>
+<button id="run-code">Run Code</button>
+<div id="output"></div>
+
+<script>
+document.getElementById("run-code").addEventListener("click", function() {
+  var userCode = document.getElementById("user-code").value;
+  try {
+    var result = eval(userCode);
+    if (result === 12) {
+      document.getElementById("output").innerHTML = "Correct!";
+      document.body.style.backgroundColor = "green";
+    } else {
+      document.getElementById("output").innerHTML = "Try again.";
+      document.body.style.backgroundColor = "red";
+    }
+  } catch (error) {
+    document.getElementById("output").innerHTML = "Error!";
+    document.body.style.backgroundColor = "red";
+  }
+});
+</script>
+
+<style>
+#user-code {
+  width: 100%;
+  height: 100px;
+}
+#run-code {
+  margin-top: 10px;
+}
+#output {
+  margin-top: 10px;
+  font-weight: bold;
+}
+</style>

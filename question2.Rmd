@@ -1,0 +1,7 @@
+---
+title: "question2"
+output: html_document
+date: '2023-08-24'
+---
+
+dette er en prøve
